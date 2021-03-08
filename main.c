@@ -47,8 +47,8 @@ int main(void)
 	// DDRD=0b10000000;
 	/* PD7 pin of PORTD is declared output (PWM2 pin of DC Motor Driver is connected) */
 	DDRC=0x0f;
-	/*PC0,PC1,PC2 and PC3 pins of PortC are declared output ( i/p1,i/p2,i/p3 and i/p4 pins of DC Motor Driver are connected)*/
-     DDRA=0xff;
+    	DDRA=0xff;
+	/*All pins of PortA are declared output ( i/p1,i/p2,i/p3 and i/p4 pins of DC Motor Drivers are connected)*/
 	set_timercounter0_mode(3);
 	/*Timer counter 0 is set to fast pwm mode*/
 
